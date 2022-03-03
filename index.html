@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yomi's Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+<header>
+	<div class="toggle-div"><div class="toggle-click-div"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div><div class="mode-div"><p class="normal-txt">NORMAL MODE</p><p class="scientific-txt">SCIENTIFIC MODE</p><p class="conversion-txt">CONVERSION MODE</p></div></div>
+	<div class="theme-div"><p><small>Themes</small><span style="position: relative; bottom: 3px; left: 6px;">▼</span></p></div>
+</header>
+<section>
+<div style="display: none;" class="mode-list">
+	<p>NORMAL MODE</p>
+	<p>SCIENTIFIC MODE</p>
+	<p style='display: none'>CONVERSION MODE</p>
+	<p><a href="http://yomidaniel.unaux.com/about.html">About the developer</a></p>
+</div>
+<div style="display: none;" class="theme-list">
+	<p>Light-theme</p>
+	<p>Dark-theme</p>
+	<p>Normal</p>
+</div>
+</section>
+<!--display for the calculations-->                                                                                          
+<div class="part-one">
+<section class="activity-block">
+		<section class="history-block" style="display: none; overflow-y: scroll; height: 20vh;">
+			<div class="history-control" style="display: none; font-size: 70%;">
+				<div class="clear-history" style="height: max-content; margin: 2px; width: max-content; padding: 4px 10px 4px 10px; border: 2px solid; font-size: 12px; flex: 1;"> CLEAR HISTORY</div><div class="back-to-calculation" style="height: max-content; margin: 2px; width: max-content; padding: 4px 10px 4px 10px; border: 2px solid; font-size: 12px; flex: 1;">BACK TO CALCULATION</div>
+			</div>
+			<div class="no-history" style="display: block; margin: 0px auto; width: max-content;">No history yet!</div>
+		</section>
+	<section class="text-input-block"><!--text input block--></section>
+<!--	<section class="history-block">history block</section>-->
+	<section class="result-block"><!--result block--></section>
+	</section>
+<!--calculators keys-->
+<section class="keys">
+<section class="control-keys"><!--control keys-->  
+	<div><p>CE</p></div>
+	<div><p>C</p></div>
+	<div><p><!--<img class="functional-icon">-->delete</p></div>
+	<div><p>history</p></div>
+</section>
+<section class="scientific-keys-normode" ><!--scientific keys-->
+	<div class="sk-row"><p>sin</p><p>cos</p><p>tan</p><p>ln</p><p>log</p></div>
+	<div class="sk-row"><p>sin<sup>-1</sup></p><p>cos<sup>-1</sup></p><p>tan<sup>-1</sup></p><p>10<sup>x</sup></p><p>e<sup>x</sup></p></div>
+	<div class="sk-row"><p>x<sup>2</sup></p><p style="font-weight: 700;">%</p><p style="font-weight: 700;">√</p><p>x<sup>y</sup></p><p>x <span style="font-weight: 700;">√</span>y</p></div>
+	<div class="sk-row"><p>π</p><p>n!</p><p>(</p><p>)</p><p style="font-weight: 700; display: none">±</p></div>
+</section>
+<section class="arithemetic-keys"><!--arithemetic keys-->
+	<section class="numerals"><!--numeric characters-->
+		<div class="nu-row-normode"><p>7</p><p>8</p><p>9</p></div>
+		<div class="nu-row-normode"><p>4</p><p>5</p><p>6</p></div>
+		<div class="nu-row-normode"><p>1</p><p>2</p><p>3</p></div>
+		<div class="nu-row-normode"><p>.</p><p>0</p><p class="equals">=</p></div>
+	</section>
+	<section class="operators"><!--operator characters-->
+		<div class="op-container-normode">
+			<p style="font-weight: 700; font-size: 120%;">+</p><p style="font-weight: 700; font-size: 130%;">-</p>
+			<p style="font-weight: 700; font-size: 120%;">÷</p><p style="font-weight: 700; font-size: 120%;">×</p>
+		</div>
+	</section>
+</section>	
+</section>
+</div>
+<div class="part-two"><!--conversion-->
+	<div class="form1">
+		<form>
+			<p class="select-text">Select a quantity</p>
+			<select name="quantities" class="select-container">
+				<option value="volume" selected class="option-quantity">Volume</option>
+				<option value="length" class="option-quantity">Length</option>
+				<option value="weight and mass" class="option-quantity">Weight and mass</option>
+				<option value="time" class="option-quantity">Time</option>
+				<option value="temprature" class="option-quantity">Temprature</option>
+				<option value="area" class="option-quantity">Area</option>
+				<option value="speed" class="option-quantity">Speed</option>
+				<option value="energy" class="option-quantity">Energy</option>
+				<option value="power" class="option-quantity">Power</option>
+				<option value="pressure" class="option-quantity">Pressure</option>
+				<option value="Angle" class="option-quantity">Angle</option><!--
+				<option value="currency"></option>-->
+			</select>
+		</form>
+	</div>
+	<div class="form2">
+		<div><p><!--conversion digits--></p> 
+			<div>
+			<form>
+				<select name="unit" class="unit1-container">
+					<option value="default" class="option-unit">No Unit Selected</option>
+				</select>
+			</form>
+			</div>
+		</div>
+		<div class="form3">
+			<p><!-- conversion digits--></p>
+			<div>
+			<form>
+				<select class="unit2-container">
+					<option value="default" class="option-unit">No Unit Selected</option>
+				</select>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!--DOM is ready -->
+<script src="modules/dom.js"></script>
+<script src="modules/logic.js"></script>
+<script src="app.js">
+</script>
+</body>
+</html>

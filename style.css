@@ -1,0 +1,318 @@
+/*i'm designing for max-width-768px*/
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    background-color: #231164;
+    color: white;
+}
+
+ .bar{
+    display: block;
+    box-sizing: border-box;
+    border-top: 2px solid;
+    width: 40px;
+    margin-top: 10px;
+ }
+ header{
+     height: 60px;
+ }
+ .toggle-div{
+     padding: 10px;
+     width: max-content;
+     height: max-content;
+     margin: auto auto;
+ }
+ .theme-div{
+     width: max-content;
+     height: max-content;
+     margin: auto auto;
+ }
+ .conversion-txt,.scientific-txt{
+     display: none;
+ }
+ .theme-list{
+    width: 150px;
+    margin-top: 0px;
+    border: 2px solid;
+    border-radius: 10px;
+    float: right;
+    background-color: white;
+    color: #231164;
+ }
+ .mode-list{
+    width: 150px;
+    margin-top: 8px;
+    border: 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    color: #231164;
+ }
+.sk-row{
+      display: -webkit-flex;
+      display: flex;
+  }
+.sk-row p{
+    box-sizing: border-box;
+    margin: 2px;
+    border: 2px solid #ffffff;
+    flex: 1;
+}
+.arithemetic-keys{
+    display: -webkit-flex;
+    display: flex;
+}
+.numerals{
+    flex: 4;
+}
+.operators{
+    flex: 1;
+}
+.op-container p,.op-container-normode p{
+    margin: 2.5px;
+    border: 2px solid #ffffff;
+    margin-top: 6%;
+}
+.nu-row-normode{
+    box-sizing: border-box;
+    margin: 2px;
+    border: 2px solid #ffffff;
+    display: flex;
+    padding: 0px;
+}
+.nu-row{
+    box-sizing: border-box;
+    margin: 2px;
+    border: 2px solid #ffffff;
+    display: flex;
+    height: max-content;
+    padding: 0px;
+}
+.nu-row p,.nu-row-normode p{
+    flex: 1;
+    height: max-content;
+    padding-top: 2.5%;
+    margin: 0px;
+}
+.nu-row-normode p{
+    margin-top: 9%;
+}
+p{
+    text-align: center;
+    font-weight: 600;
+}
+.select-text{
+    font-size: 150%;
+    text-transform: capitalize;
+}
+.select-container,.unit1-container,.unit2-container{
+    width: 200px;
+    border: 0px solid;
+    padding: 10px;
+    margin: 0px auto;
+    display: block; 
+      font-size: 120%;
+    font-weight: 500;
+}
+  .keys,.control-keys,.scientific-keys{
+      box-sizing: border-box;
+      width: 100%;
+  }
+  .scientific-keys{
+      display: block;
+  }
+  .scientific-keys-normode{
+      display: none;
+  }
+  .part-two{
+      display: none;
+      position: fixed;
+      top: 125px;
+      left: 13%;
+      z-index: 1;
+  }
+/*width - media*/
+@media screen and (max-width: 320px){
+    .bar{
+        width: 40px;
+    }
+    header{
+        box-sizing: border-box;
+        height: max-content;
+        width: 100%;
+        border-bottom: 1px solid;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .toggle-div{
+        width: max-content;
+        padding: 0px 0px 0px 10px;
+    }
+    .theme-div{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .toggle-div{
+        box-sizing: border-box;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .toggle-click-div{
+        box-sizing: border-box;
+        width: max-content;
+    }
+    .mode-div{
+        box-sizing: border-box;
+    }
+    .caret-icon{
+        width: 15px;
+    }
+    .icon-caret{
+        position: relative;
+        top: 2px;
+        left: 5px;
+    }
+    .normal-txt,.scientific-txt,.conversion-txt{
+        margin: 0px;
+        box-sizing: border-box;
+        width: max-content;
+        padding: 10px 0px 10px 10px;
+    }
+  small{
+    position: relative;
+    bottom: 5px;
+  }
+  .activity-block{
+      box-sizing: border-box;
+      width: 100%;
+      height: 170px;
+      border-bottom: 2px solid #ffffff;
+  }
+
+  .control-keys{
+      display: -webkit-flex;
+      display: flex;
+  }
+  .control-keys div{
+      flex: 1;
+      box-sizing: border-box;
+      margin: 2px;
+      padding: 0px;
+      border: 2px solid #ffffff;
+  }
+  .functional-icon{
+      width: 0.68rem;
+  }
+ }
+ @media screen and (min-width: 321px) and (max-width: 790px){
+  
+    .bar{
+        width: 40px;
+    }
+    header{
+        box-sizing: border-box;
+        height: max-content;
+        width: 100%;
+        border-bottom: 1px solid;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .toggle-div{
+        width: max-content;
+    }
+    .theme-div{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .toggle-div{
+        box-sizing: border-box;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        padding: 0px 0px 0px 10px;
+    }
+    .toggle-click-div{
+        box-sizing: border-box;
+        width: max-content;
+    }
+    .mode-div{
+        box-sizing: border-box;
+    }
+    .caret-icon{
+        width: 15px;
+    }
+    .icon-caret{
+        position: relative;
+        top: 2px;
+        left: 5px;
+    }
+    .normal-txt,.scientific-txt,.conversion-txt{
+        margin: 0px;
+        box-sizing: border-box;
+        width: max-content;
+        padding: 10px 0px 10px 10px;
+    }
+  small{
+    position: relative;
+    bottom: 5px;
+  }
+  .activity-block{
+      box-sizing: border-box;
+      width: 100%;
+      height: 170px;
+      border-bottom: 2px solid #ffffff;
+  }
+
+  .control-keys{
+      display: -webkit-flex;
+      display: flex;
+  }
+  .control-keys div{
+      flex: 1;
+      box-sizing: border-box;
+      margin: 2px;
+      padding: 3px;
+      border: 2px solid #ffffff;
+  }
+  .functional-icon{
+      width: 0.68rem;
+  }  
+ }
+
+@media (min-width: 791px){
+    body{
+        display: none;
+    }
+}
+@media screen and (max-device-height: 800px){
+    header{ 
+     height: 10vh;  
+    }
+    .activity-block{
+    height: 20vh ;
+    }
+    .control-keys{
+    height: 11vh;
+    }
+    .sk-row{
+    height: 6vh;
+    }
+    .nu-row{
+    height: 8vh;
+    }
+    .op-container p{
+    height: 7vh;
+    }
+    .nu-row-normode{
+        height: 14vh;
+    }
+    .op-container-normode p{
+        height: 13vh;
+    }
+}
