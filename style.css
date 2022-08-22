@@ -6,8 +6,15 @@ body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
-    background-color: #231164;
+    background-color: #ffffff;
     color: white;
+}
+main{
+    background: #231164;
+    max-width: 700px;
+    border: 2px solid;
+    margin: 0px auto;
+    height: 100vh;
 }
 
  .bar{
@@ -49,7 +56,6 @@ body{
     border: 2px solid;
     border-radius: 10px;
     position: absolute;
-    left: 0px;
     background-color: white;
     color: #231164;
  }
@@ -73,10 +79,17 @@ body{
 .operators{
     flex: 1;
 }
+.op-container-normode{
+    height: 100%;
+}
+.op-container{
+    height: 98%;
+}
 .op-container p,.op-container-normode p{
-    margin: 2.5px;
     border: 2px solid #ffffff;
-    margin-top: 6%;
+    height: 23.56%;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .nu-row-normode{
     box-sizing: border-box;
@@ -84,23 +97,28 @@ body{
     border: 2px solid #ffffff;
     display: flex;
     padding: 0px;
+    height: 100px;
 }
 .nu-row{
     box-sizing: border-box;
     margin: 2px;
     border: 2px solid #ffffff;
     display: flex;
-    height: max-content;
+    height: 70px;
     padding: 0px;
 }
 .nu-row p,.nu-row-normode p{
     flex: 1;
     height: max-content;
-    padding-top: 2.5%;
     margin: 0px;
 }
+.nu-row p {
+    position : relative;
+    top : 35%;   
+}
 .nu-row-normode p{
-    margin-top: 9%;
+    position : relative;
+    top : 35%;
 }
 p{
     text-align: center;
@@ -135,6 +153,10 @@ p{
       top: 125px;
       left: 13%;
       z-index: 1;
+  }
+  .op-char{
+    position: relative;
+    top: 30%;
   }
 /*width - media*/
 @media screen and (max-width: 320px){
@@ -210,7 +232,7 @@ p{
       width: 0.68rem;
   }
  }
- @media screen and (min-width: 321px) and (max-width: 790px){
+ @media screen and (min-width: 321px){
   
     .bar{
         width: 40px;
@@ -228,7 +250,8 @@ p{
     }
     .theme-div{
         box-sizing: border-box;
-        width: 100%;
+        width: max-content;
+        margin-right: 20px;
     }
     .toggle-div{
         box-sizing: border-box;
@@ -285,11 +308,6 @@ p{
   }  
  }
 
-@media (min-width: 791px){
-    body{
-        display: none;
-    }
-}
 @media screen and (max-device-height: 800px){
     header{ 
      height: 10vh;  
@@ -308,11 +326,5 @@ p{
     }
     .op-container p{
     height: 7vh;
-    }
-    .nu-row-normode{
-        height: 14vh;
-    }
-    .op-container-normode p{
-        height: 13vh;
     }
 }

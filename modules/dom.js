@@ -138,18 +138,19 @@ document.querySelector('.mode-list').children[0].addEventListener('click',normal
 document.querySelector('.mode-list').children[1].addEventListener('click',scientificMode);
 document.querySelector('.mode-list').children[2].addEventListener('click',conversionMode);
 function themeNormal(){
-document.body.style['background-color']='#231164';
-document.body.style['color']='white';
+    
+    document.getElementsByTagName("main")[0].style['background-color']='#231164';
+document.getElementsByTagName("main")[0].style['color']='white';
 hideThemes();
 }
 function themeLight(){
-    document.body.style['background-color']="#e8e4e4";
-    document.body.style['color']='#1d2724';
+    document.getElementsByTagName("main")[0].style['background-color']="#e8e4e4";
+    document.getElementsByTagName("main")[0].style['color']='#1d2724';
     hideThemes();    
 }
 function themeDark(){
-document.body.style['background-color']='#00001B';
-document.body.style['color']='#ffffff';
+    document.getElementsByTagName("main")[0].style['background-color']='#00001B';
+    document.getElementsByTagName("main")[0].style['color']='#ffffff';
 hideThemes();
 }
 document.querySelector('.theme-list').children[0].addEventListener('click',themeLight);
