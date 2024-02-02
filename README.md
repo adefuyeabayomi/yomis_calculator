@@ -1,2 +1,2 @@
 # yomis_calculator
-A scientific calculator built with HTML,CSS and JS only
+A scientific calculator built with vanilla HTML,CSS and JS only

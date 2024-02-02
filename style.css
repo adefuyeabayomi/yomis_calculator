@@ -27,6 +27,22 @@ main{
  header{
      height: 60px;
  }
+ 
+ .hic_button{
+    height: max-content;
+    margin: 2px;
+    width: max-content;
+    padding: 4px 10px 4px 10px;
+    border: 2px solid;
+    font-size: 12px;
+    flex: 1;
+ }
+ .result-container{
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 500;
+ }
+
  .toggle-div{
      padding: 10px;
      width: max-content;
@@ -41,7 +57,10 @@ main{
  .conversion-txt,.scientific-txt{
      display: none;
  }
- .theme-list{
+ .scientific-keys {
+    display: none;
+ }
+ .theme-list {
     width: 150px;
     margin-top: 0px;
     border: 2px solid;
@@ -49,7 +68,9 @@ main{
     float: right;
     background-color: white;
     color: #231164;
- }
+    position: absolute;
+    right: 7%;
+}
  .mode-list{
     width: 150px;
     margin-top: 8px;
@@ -141,12 +162,6 @@ p{
       box-sizing: border-box;
       width: 100%;
   }
-  .scientific-keys{
-      display: block;
-  }
-  .scientific-keys-normode{
-      display: none;
-  }
   .part-two{
       display: none;
       position: fixed;
@@ -157,6 +172,12 @@ p{
   .op-char{
     position: relative;
     top: 30%;
+  }
+  .historyItem {
+    border: 2px solid;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 10px;
   }
 /*width - media*/
 @media screen and (max-width: 320px){

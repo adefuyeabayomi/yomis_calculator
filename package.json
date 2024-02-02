@@ -1,0 +1,15 @@
+{
+  "name": "yomis_calculator",
+  "version": "2.0.0",
+  "description": "A scientific calculator built with vanilla HTML,CSS and JS only",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier .  --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.2.4"
+  }
+}
