@@ -359,7 +359,7 @@ const cancel = () => {
 };
 
 function CancelEveryThing() {
-  emptyHistory();
+  clearHistory();
   cancel();
 }
 
@@ -375,11 +375,11 @@ equalsKey.addEventListener("click", () => {
 });
 
 deleteKey.addEventListener("click", () => {
-  deleteHandler(e);
+  deleteHandler();
 });
 
 cancelKey.addEventListener("click", () => {
-  cancel(e);
+  cancel();
 });
 
 historyKey.addEventListener("click", () => {
