@@ -2,7 +2,7 @@
 
 **A scientific calculator built with vanilla HTML, CSS, and JavaScript**  
 
-[Live Demo](https://adefuyeabayomi.github.io/yomis_calculator)
+[Live Demo](https://yomiscalculator.netlify.app/)
 
 ---
 
